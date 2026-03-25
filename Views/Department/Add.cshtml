@@ -1,0 +1,39 @@
+@model Department
+
+<div class="container mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h5 class="mb-0">Departman Bilgileri</h5>
+        </div>
+        <div class="card-body">
+            <form action="" method="post">
+                
+                <div class="mb-3">
+                    <label for="Id" class="form-label fw-bold">ID</label>
+                    <input asp-for="Id"" type="text" class="form-control bg-light">
+                    <div class="form-text">VT olsaydı Sistem tarafından otomatik atanırdı.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="DepCode" class="form-label fw-bold">Departman Kodu</label>
+                    <input type="text" class="form-control" asp-for="DepCode" placeholder="Örn: YAZ-01" required>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="DepName" class="form-label fw-bold">Departman Adı</label>
+                    <input type="text" class="form-control" asp-for="DepName" placeholder="Örn: Yazılım Geliştirme" required>
+                </div>
+
+                <hr>
+
+                <div class="d-flex justify-content-end">
+                    <button type="reset" class="btn btn-secondary me-2">Temizle</button>
+                    <button type="submit" class="btn btn-success px-4">
+                        <i class="bi bi-save"></i> Kaydet
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
